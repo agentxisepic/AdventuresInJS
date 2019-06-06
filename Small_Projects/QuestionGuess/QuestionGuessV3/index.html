@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Question Guess</title>
+    </head>
+
+    <body>
+        <h1>Question Guess: V3. Make your own questions!</h1>
+        <p>Question: <input id = "inputQuestion" type="text"><br />
+          <h4>Possible Answers</h4>1: <input id = "answer1" type="text">
+          <br /><br />2: <input id = "answer2" type="text">
+          <br /><br />3: <input id = "answer3" type="text">
+          <br /><br />4: <input id="answer4" type="text">
+          <br /><br />Correct Answer: <input id="correctAnswer" type="text" placeholder="input 1, 2, 3 or 4">
+          <br /><br />   <button onclick="createQuestion()">Create Question</button>   <button onclick="clearFields()">Clear</button>
+          <br /><br /><button onclick="chooseQuestion()">PlayGame!</button>
+        </p>
+        <h3> CREATE SET OF QUESTIONS FROM CURRENT POOL</h3>
+        <p>Name your set of questions: <input id = "nameOfSetPUSH" type="text">
+          <br /><button onclick="makeSet()">CREATE SET</button>   <button onclick="clearPool()">CLEAR POOL</button>
+        </p>
+        <h3> LOAD A SET OF QUESTIONS</h3>
+        <p> What is the name of your set of questions?: <input id = "nameOfSetPULL" type="text">
+          <br /><button onclick="showSets()">SHOW SETS</button>   <button onclick="hideSets()">HIDE SETS</button>   <button onclick="retrieveSet()">RETRIEVE SET</button>
+        </p>
+        <p id = "showHide"></p>
+        <h3> DELETE A SET OF QUESTIONS</h3>
+        <p> What is the name of the set you would like to delete?: <input id = "nameOfSetDelete" type="text">
+          <br /><button onclick="deleteSet()">DELETE SET</button>   <button onclick="deleteAll()">DELETE ALL SETS</button>
+        <script src="script3.js"></script>
+    </body>
+</html>
