@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head onload="myfunction();">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="libraries/socket.io.js"></script>
+    <script type="text/javascript" src="clientController.js"></script>
+
+
+    <title></title>
+  </head>
+  <body>
+    <ul class="NavigationBar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PlayGame.html">Play</a></li>
+      <li><a href="questionCreation.html">QuestionCreation</a></li>
+    </ul>
+    <br />
+    <p> Choose What Question Set to play</p>
+    <input id = 'nameOfSet' type = 'text'>
+    <button onclick='playGame()'>Play Game!</button><span id = 'GameIDDisplay'>        GameID: </span>
+    <br />
+    <p id = 'showHide'></p>
+    <script>
+      displaySets();
+    </script>
+    <p>Enter Game ID to Join</p>
+    <input id = 'gameIDToJoin' type = 'text'>
+    <button onclick='joinGame()'>Join Game!</button>
+    <br /><br /><br />
+    <p id = 'QuestionQuestion'>What is 1 + 1?</p>
+    <p id = 'PAnswer1'>A: </p>
+    <p id = 'PAnswer2'>B: </p>
+    <p id = 'PAnswer3'>C: </p>
+    <p id = 'PAnswer4'>D: </p>
+    <br/>
+    <input id = 'PlayerAnswer' type = 'text'>
+    <button onclick='SubmitAnswer()'>SubmitAnswer!</button>
+    <p id = 'PlayerStatsLine'>Player Stats Lol</p>
+  </body>
+</html>
